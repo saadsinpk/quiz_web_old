@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+.fontpoppins{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
+.aligner{
+  align-items: center;
+}
+
+
+
+
+
+.backgroundvector{
+  background-image: url("./assets/background/background image.svg");
+  background-repeat: no-repeat;
+  
+}
+
+.colrer{
+  background-color: cadetblue;
+}
+
+ /* Change the fill color to blue for WebKit (Chrome and Safari) */
+ meter::-webkit-meter-optimum-value {
+  background: blue;
+}
+
+/* Change the fill color to blue for Firefox */
+meter::-moz-meter-optimum {
+  background: blue;
+}
+
+.horizontalline{ 
+  display: flex; 
+  flex-direction: row; 
+} 
+
+.horizontalline:before, 
+.horizontalline:after { 
+  content: ""; 
+  flex: 1 1; 
+  border-bottom: 2px solid rgb(163, 163, 163); 
+  margin: auto; 
+}
+
+.slate-color{
+  background-color: rgba(19, 18, 18, 0.12);
+}
+
+.multicolor-progress-bar {
+  display: flex;
+  height: 20px;
+  width: 100%;
+}
+
+.progress-bar-segment {
+  height: 100%;
+  transition: width 0.3s;
+}
+
+.toggle-button{
+  position: absolute;
+  top: 2.2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px ;
+  height: 39px ;
+}
+
+.navlinkadded{
+  display: flex;
+}
+
+
+.toggle-button .bar{
+  height: 4px;
+  width: 100%;
+  background-color: rgb(30, 64, 175);
+  border-radius: 10px;
+}
+
+.query-2{
+  width: 22rem;
+}
+
+.query-4{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.query-21{
+  display: flex;
+}
+
+.mediaquer39{
+  width: 70rem;
+}
+
+.query31{
+  display: flex;
+  
+  position: relative;
+  bottom: 7rem;
+  align-items: flex-start;
+  margin-top: 16%;
+}
+
+
+.query32{
+  width: 35rem;
+}
+
+.query42{
+  width: 28rem;
+}
+
+.query33{
+  width: 25rem;
+}
+.query34{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.circleofimage{
+  height: 11rem;
+  width: 11rem;
+}
+
+
+
+@media(min-width : 1000px){
+  .navbar{
+  display : flex;
+  justify-content: flex-end;
+  }
+  .toggle-button{
+    display: none;
+  }
+
+  .query-5{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    width: 37rem;
+  }
+  .backgroundvector{
+    height: 52rem;
+  }
+  
+  
+
+} 
+
+
+
+@media(max-width : 1000px){  
+
+.toggle-button{
+    display: flex;
+  }
+
+  .navbar{
+    
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+
+  .navlinkadded {
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    margin-top: 100px;
+    width: 480px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .myClasss{
+    display: none;
+  }
+
+  .query-1{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .query-2{
+    width: 10rem;
+    padding-top: 1.75rem;
+  }
+
+  .query-3{
+    background-color: rgb(28, 118, 202);
+  }
+
+  .query-4{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .query-21{
+    flex-direction: column;
+  }
+
+  .query31{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0rem;
+    margin-top: 18rem;
+  }
+
+
+  .query32{
+    width: 22rem;
+  }
+
+  .query42{
+    width: 20rem;
+  }
+
+  .query-33{
+    width: 10rem;
+  }
+
+  .query34{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .circleofimage{
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .mediaquer37{
+    background-color: rgb(76, 148, 230);
+    text-align: center;
+    
+  }
+
+  .mediaquer39{
+    background-color: rgb(76, 148, 230);
+    width: 30rem;
+    
+  }
+
+  .backgroundvector2{
+    background-image: url("./assets/background/background image.png");
+    height: 900px;
+    background-clip: content-box;
+  }
+  
+  
+}
+
+
+@media(min-width: 1472px){
+    .backgroundvector{
+      background-image: url("./assets/background/background image.png");
+      background-repeat: repeat;
+      
+    }
+}
+
+.active{
+  color : rgb(30, 64, 175);
+  border-bottom: rgb(30, 64, 175) solid 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Change the color of the track (the area behind the thumb) */
+::-webkit-scrollbar {
+  width: 5px; /* You can adjust the width */
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white; /* Change this to the color you want */
+  border-radius: 12px;
+}
+
+/* Change the color of the thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: blue; /* Change this to the color you want */
+  border-radius: 12px;
+}
+
+
+
+
+
+.overlay {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Change the opacity value as needed */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  /* Your content styling here */
+}
+input.middle:focus {
+  outline-width: 0;
+}
+
+
+input:focus {
+  outline: none; /* Remove the default focus border */
+  border: 1px solid transparent; /* Add your desired border styles, like solid, dashed, none, etc. */
+}
+
+
+@media (max-width: 1199px) {
+  .gridremover {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .query-ext{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .query-ext2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .query-ext3{
+    width: 250px;
+  }
+
+  .query-big{
+    margin-left: 170px;
+  }
+
+}
+
+
+
+
